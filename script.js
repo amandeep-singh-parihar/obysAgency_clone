@@ -40,4 +40,18 @@ function loadingAnimation() {
     display: "none",
   });
 }
+
+function cursorAnimation() {
+  document.addEventListener("mousemove", function (dets) {
+    gsap.to("#crsr", {
+      left: dets.x,
+      top: dets.y,
+    });
+  });
+
+  Shery.makeMagnet("#nav-part2 h4");
+}
+
 loadingAnimation();
+
+cursorAnimation();
