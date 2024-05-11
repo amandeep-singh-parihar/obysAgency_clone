@@ -12,17 +12,16 @@ body {
   width: 100%;
 }
 
-#crsr{
+/* #crsr{
   height: 2.5vw;
   width: 2.5vw;
   border-radius: 50%;
-  /* background-color: white; */
   position: fixed;
-  z-index: 9999;
+  z-index: 999;
   border: 1px solid #ffffffb4;
   mix-blend-mode: difference;
   transform: translate(-50%,-50%);
-}
+} */
 
 #loader {
   height: 100%;
@@ -162,6 +161,10 @@ h6 {
   width: 72%;
   margin-left: 28%;
   letter-spacing: 0.5vh;
+  height: fit-content;
+  overflow: hidden;
+  position: relative;
+  z-index: 999;
 }
 
 .hero:nth-child(2) {
@@ -179,22 +182,35 @@ h6 {
   text-decoration: underline;
   text-decoration-skip-ink: none;
   text-underline-offset: 0.1em;
+  padding-right: 5px;
+  margin-right: 5px;
 }
 
 #graphic {
   text-decoration: underline;
   text-decoration-skip-ink: none;
   text-underline-offset: 0.1em;
-  padding: 0px 0px 0px 20px;
-  margin: 0px 0px 0px 10px;
+  margin: 0px 0px 0px -20px;
 }
 
-#divide::before {
-  color: #fff;
-  position: absolute;
-  content: "/";
-  top: 64%;
-  left: 44.5%;
-  font-weight: 600;
-  font-size: 7.2vw;
+#divide {
+  /* background-color: red; */
+  height: 16.5vh;
+  margin-bottom: -1vh;
+}
+
+#divide #graphic:hover {
+  -webkit-text-stroke: 1px #fff;
+  color: transparent;
+  font-weight: 100;
+  text-decoration: none;
+  transition: all ease 0.1s;
+}
+
+#divide #web:hover {
+  -webkit-text-stroke: 1px #fff;
+  color: transparent;
+  font-weight: 100;
+  text-decoration: none;
+  transition: all ease 0.1s;
 }
