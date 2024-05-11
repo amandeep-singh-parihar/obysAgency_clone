@@ -12,6 +12,10 @@ body {
   width: 100%;
 }
 
+body{
+  overflow-x: hidden;
+}
+
 /* #crsr{
   height: 2.5vw;
   width: 2.5vw;
@@ -130,7 +134,6 @@ h6 {
   position: relative;
   /* background-color: #030303; */
   background-color: #151515;
-
 }
 
 #page1 {
@@ -226,7 +229,7 @@ h6 {
 }
 
 #video-container {
-  height:70vh;
+  height: 70vh;
   width: 71vw;
   position: relative;
   left: 28%;
@@ -261,19 +264,93 @@ h6 {
   z-index: 9999;
 }
 
-#video-cursor i{
+#video-cursor i {
   font-size: 2vw;
 }
 
-#page3{
+#page3 {
   min-height: 100vh;
   width: 100%;
   background-color: #975353;
 }
 
-
-#page4{
-  height: 100vh;
+#page4 {
+  min-height: 100vh;
   width: 100%;
   /* background-color: #151515; */
+  padding: 7vh 0;
+}
+
+#page4-content {
+  width: 72vw;
+  margin-left: 28%;
+  position: relative;
+}
+
+#page4-content h1{
+  font-size: 7vw;
+  text-transform: uppercase;
+
+}
+
+#page4-content .underline{
+  height: 0.1px;
+  width: 100%;
+  background-color: #fff;
+  margin: 5vw 0;
+}
+
+#page4-content>p{
+  font-size: 2.3vw;
+  width: 50%;
+  margin-bottom:  4vw;
+}
+
+#page4-flex{
+  display: flex;
+}
+
+#page4-flex img{
+  width: 47%;
+}
+
+#page4-flex p{
+  padding-left: 2vw;
+  font-size: 1vw;
+  width: 30%;
+  word-spacing: 2px;
+  line-height: 3vh;
+}
+
+#page4-blue-div{
+  background-color: #3f7df4;
+  width: 33.8vw;
+  padding:4vw;
+  position: relative;
+  margin-top: -31vh;
+  margin-left: 23.5vw;
+}
+
+.blue-div-elem{
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  /* background-color: red; */
+  padding: 2vw 0;
+  border-bottom: 2px solid #ffffff96;
+}
+
+.blue-div-elem h4{
+  font-size: 1.5vw;
+  font-weight: 500;
+}
+
+.blue-div-elem p{
+  width: 40%;
+  font-size: 1vw;
+}
+
+#page5{
+  min-height: 100vh;
+  width: 100%;
 }
