@@ -12,7 +12,7 @@ body {
   width: 100%;
 }
 
-body{
+body {
   overflow-x: hidden;
 }
 
@@ -287,34 +287,33 @@ h6 {
   position: relative;
 }
 
-#page4-content h1{
+#page4-content h1 {
   font-size: 7vw;
   text-transform: uppercase;
-
 }
 
-#page4-content .underline{
+#page4-content .underline {
   height: 0.1px;
   width: 100%;
   background-color: #fff;
   margin: 5vw 0;
 }
 
-#page4-content>p{
+#page4-content > p {
   font-size: 2.3vw;
   width: 50%;
-  margin-bottom:  4vw;
+  margin-bottom: 4vw;
 }
 
-#page4-flex{
+#page4-flex {
   display: flex;
 }
 
-#page4-flex img{
+#page4-flex img {
   width: 47%;
 }
 
-#page4-flex p{
+#page4-flex p {
   padding-left: 2vw;
   font-size: 1vw;
   width: 30%;
@@ -322,16 +321,16 @@ h6 {
   line-height: 3vh;
 }
 
-#page4-blue-div{
+#page4-blue-div {
   background-color: #3f7df4;
   width: 33.8vw;
-  padding:4vw;
+  padding: 4vw;
   position: relative;
   margin-top: -31vh;
   margin-left: 23.5vw;
 }
 
-.blue-div-elem{
+.blue-div-elem {
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
@@ -340,17 +339,93 @@ h6 {
   border-bottom: 2px solid #ffffff96;
 }
 
-.blue-div-elem h4{
+.blue-div-elem h4 {
   font-size: 1.5vw;
   font-weight: 500;
 }
 
-.blue-div-elem p{
+.blue-div-elem p {
   width: 40%;
   font-size: 1vw;
 }
 
-#page5{
+#page5 {
   min-height: 100vh;
   width: 100%;
+  position: relative;
+}
+
+.elem {
+  white-space: nowrap;
+  overflow-x: hidden;
+  margin-bottom: -5vh;
+}
+
+.elem h1 {
+  font-size: 7.2vw;
+  -webkit-text-stroke: 1px #fff;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: transparent;
+  display: inline-block;
+  margin-right: 16px;
+  animation-name: marqui;
+  animation-duration: 25s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  /* background-color: blue; */
+}
+
+@keyframes marqui {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(calc(-100% - 20px));
+  }
+}
+
+.elem2 {
+  white-space: nowrap;
+  overflow-x: hidden;
+  margin-bottom: -5vh;
+}
+
+.elem2 h1 {
+  font-size: 7.2vw;
+  -webkit-text-stroke: 1px #fff;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: transparent;
+  display: inline-block;
+  margin-right: 16px;
+  animation-name: marqui;
+  animation-duration: 25s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-direction: reverse;
+  /* background-color: red; */
+}
+
+/* @keyframes marqui2 {
+  to {
+    transform: translateX(0);
+  }
+  from {
+    transform: translateX(calc(-100% - 20px));
+  }
+} */
+
+.elem span {
+  font-style: italic;
+  font-family: "silk serif";
+  -webkit-text-stroke: 1px #fff;
+  color: transparent;
+}
+
+.elem2 span {
+  font-style: italic;
+  font-family: "silk serif";
+  -webkit-text-stroke: 1px #fff;
+  color: transparent;
 }
