@@ -353,79 +353,81 @@ h6 {
   min-height: 100vh;
   width: 100%;
   position: relative;
+  /* background-color: #ffa630; */
 }
 
-.elem {
+.elem{
+  /* background-color: red; */
   white-space: nowrap;
   overflow-x: hidden;
-  margin-bottom: -5vh;
+  margin-bottom: 1vw;
+  margin-bottom: -6vh;
 }
 
-.elem h1 {
+.elem h1{
   font-size: 7.2vw;
   -webkit-text-stroke: 1px #fff;
-  font-weight: 400;
-  text-transform: uppercase;
+  font-weight: 500;
   color: transparent;
+  text-transform: uppercase;
+  /* background-color: green; */
   display: inline-block;
   margin-right: 16px;
-  animation-name: marqui;
-  animation-duration: 25s;
+  animation-name: marquee;
+  animation-duration: 125s;
   animation-timing-function: linear;
   animation-iteration-count: infinite;
-  /* background-color: blue; */
 }
 
-@keyframes marqui {
-  from {
+@keyframes marquee {
+  from{
     transform: translateX(0);
   }
-  to {
+  to{
     transform: translateX(calc(-100% - 20px));
   }
 }
 
-.elem2 {
+.elem2{
+  /* background-color: red; */
   white-space: nowrap;
   overflow-x: hidden;
-  margin-bottom: -5vh;
+  margin-bottom: 1vw;
+  margin-bottom: -6vh;
+
 }
 
-.elem2 h1 {
+.elem2 h1{
   font-size: 7.2vw;
   -webkit-text-stroke: 1px #fff;
-  font-weight: 400;
-  text-transform: uppercase;
+  font-weight: 500;
   color: transparent;
+  text-transform: uppercase;
   display: inline-block;
+  transform: translateX(calc(-100% - 20px));
+  /* background-color: red; */
   margin-right: 16px;
-  animation-name: marqui;
-  animation-duration: 25s;
+  animation-name: marquee;
+  animation-duration: 125s;
   animation-timing-function: linear;
   animation-iteration-count: infinite;
   animation-direction: reverse;
-  /* background-color: red; */
 }
 
-/* @keyframes marqui2 {
-  to {
-    transform: translateX(0);
-  }
-  from {
-    transform: translateX(calc(-100% - 20px));
-  }
-} */
-
-.elem span {
+.elem span{
   font-style: italic;
-  font-family: "silk serif";
-  -webkit-text-stroke: 1px #fff;
+  font-family: 'silk serif';
   color: transparent;
 }
 
-.elem2 span {
+.elem2 span{
   font-style: italic;
-  font-family: "silk serif";
-  -webkit-text-stroke: 1px #fff;
+  font-family: 'silk serif';
   color: transparent;
 }
+
+
+
+
+
+
