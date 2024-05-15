@@ -426,6 +426,16 @@ h6 {
   color: transparent;
 }
 
+.elem code{
+  -webkit-text-stroke: 1px #fff;
+  color: transparent;
+}
+
+.elem2 code{
+  -webkit-text-stroke: 1px #fff;
+  color: transparent;
+}
+
 
 
 
