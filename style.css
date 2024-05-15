@@ -162,15 +162,28 @@ h6 {
 }
 
 .hero {
-  /* background-color: red; */
+  background-color: red;
   width: 72%;
   margin-left: 28%;
   letter-spacing: 0.5vh;
   height: fit-content;
   overflow: hidden;
+  display: flex;
   position: relative;
-  z-index: 999;
+  align-items: center;
 }
+
+#hero1::before {
+  content: "01";
+  position: absolute;
+  font-size: 3.5vw;
+  font-weight: 100;
+  font-family: "silk serif";
+  left: 20%;
+  top: 19%;
+  background-color: green;
+}
+
 
 .hero:nth-child(2) {
   margin-top: 17.2vh;
@@ -181,6 +194,7 @@ h6 {
   text-transform: uppercase;
   line-height: 7.3vw;
   font-weight: 600;
+  position: relative;
 }
 
 #web {
@@ -290,6 +304,17 @@ h6 {
 #page4-content h1 {
   font-size: 7vw;
   text-transform: uppercase;
+  position: relative;
+}
+
+#page4-content h1::before {
+  content: "03";
+  position: absolute;
+  font-size: 3.5vw;
+  font-weight: 100;
+  font-family: "silk serif";
+  left: -15%;
+  top: 5%;
 }
 
 #page4-content .underline {
@@ -297,6 +322,7 @@ h6 {
   width: 100%;
   background-color: #fff;
   margin: 5vw 0;
+  width: 92%;
 }
 
 #page4-content > p {
@@ -356,7 +382,7 @@ h6 {
   /* background-color: #ffa630; */
 }
 
-.elem{
+.elem {
   /* background-color: red; */
   white-space: nowrap;
   overflow-x: hidden;
@@ -364,7 +390,7 @@ h6 {
   margin-bottom: -6vh;
 }
 
-.elem h1{
+.elem h1 {
   font-size: 7.2vw;
   -webkit-text-stroke: 1px #fff;
   font-weight: 500;
@@ -380,24 +406,23 @@ h6 {
 }
 
 @keyframes marquee {
-  from{
+  from {
     transform: translateX(0);
   }
-  to{
+  to {
     transform: translateX(calc(-100% - 20px));
   }
 }
 
-.elem2{
+.elem2 {
   /* background-color: red; */
   white-space: nowrap;
   overflow-x: hidden;
   margin-bottom: 1vw;
   margin-bottom: -6vh;
-
 }
 
-.elem2 h1{
+.elem2 h1 {
   font-size: 7.2vw;
   -webkit-text-stroke: 1px #fff;
   font-weight: 500;
@@ -414,30 +439,94 @@ h6 {
   animation-direction: reverse;
 }
 
-.elem span{
+.elem span {
   font-style: italic;
-  font-family: 'silk serif';
+  font-family: "silk serif";
   color: transparent;
 }
 
-.elem2 span{
+.elem2 span {
   font-style: italic;
-  font-family: 'silk serif';
+  font-family: "silk serif";
   color: transparent;
 }
 
-.elem code{
+.elem code {
   -webkit-text-stroke: 1px #fff;
   color: transparent;
 }
 
-.elem2 code{
+.elem2 code {
   -webkit-text-stroke: 1px #fff;
   color: transparent;
 }
 
+#footer {
+  height: 100vh;
+  width: 100%;
+  /* background-color: red; */
+  position: relative;
+  padding-left: 28vw;
+}
 
+#footer h1 {
+  font-size: 7.5vw;
+  /* background-color: blue; */
+  margin-bottom: 10vh;
+  text-transform: uppercase;
+  position: relative;
+}
 
+#footer h1::before {
+  content: "04";
+  position: absolute;
+  font-size: 3.5vw;
+  font-weight: 100;
+  font-family: "silk serif";
+  left: -15%;
+  top: 5%;
+}
 
+.underline {
+  height: 1px;
+  width: 92%;
+  background-color: #fff;
+  margin: 2vw 0;
+  /* margin-right: 5vw; */
+}
 
+#footer-div {
+  margin-top: 12vh;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  /* padding-right: 5vw; */
+  margin-bottom: 16vh;
+  /* background-color: blue; */
+  width: 85%;
+}
 
+#footer-div #add {
+  padding-left: 5vw;
+  /* display: flex; */
+  /* background-color: green; */
+  width: 20vw;
+}
+
+#footer-div .box h6 {
+  font-family: "Plain regular";
+  font-size: 1.2vw;
+  margin-bottom: 3.5vh;
+}
+
+#footer-div .box h5 {
+  font-family: "Plain light";
+  font-size: 1.7vw;
+  font-weight: 100;
+  line-height: 3.8vh;
+}
+
+#footer > h5 {
+  font-weight: 500;
+  font-size: 1vw;
+}
