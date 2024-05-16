@@ -161,27 +161,32 @@ h6 {
   font-weight: 500;
 }
 
-.hero {
-  background-color: red;
+.hero-wrapper {
+  position: relative;
+  overflow: hidden; /* Control overflow for animation */
+}
+
+#page1 .hero {
+  /* background-color: red; */
   width: 72%;
   margin-left: 28%;
   letter-spacing: 0.5vh;
   height: fit-content;
-  overflow: hidden;
+  /* overflow: hidden; */
   display: flex;
   position: relative;
   align-items: center;
 }
 
-#hero1::before {
+#page1 #hero1::before {
   content: "01";
   position: absolute;
   font-size: 3.5vw;
   font-weight: 100;
   font-family: "silk serif";
-  left: 20%;
-  top: 19%;
-  background-color: green;
+  left: -15%;
+  top: -5%;
+  /* background-color: green; */
 }
 
 
