@@ -220,7 +220,7 @@ h6 {
 #divide {
   /* background-color: red; */
   height: 16.5vh;
-  margin-bottom: -1vh;
+  margin-bottom: 1vh;
 }
 
 #divide #graphic:hover {
